@@ -14,3 +14,5 @@
 Route::get('/', 'ProductController@index')->name('products');
 
 Route::get('descargar-productos', 'ProductController@pdf')->name('products.pdf');
+
+Route::get('descargar-excel', 'ProductController@excel')->name('spreadsheet');
