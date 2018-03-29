@@ -28,4 +28,11 @@ class ProductController extends Controller
 
         return $pdf->download('listado.pdf');
     }
+    
+    public function excel()
+    {   
+        $products = new ProductsExport();
+        return $products->download('products.xlsx');
+        //return $products->download('products.ods');
+    }
 }
