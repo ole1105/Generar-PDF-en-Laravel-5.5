@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Exports\ProductsExport;
 use Illuminate\Http\Request;
-
 use Barryvdh\DomPDF\Facade as PDF;
 
 class ProductController extends Controller
